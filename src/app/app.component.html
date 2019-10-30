@@ -1,0 +1,60 @@
+
+<!-- navigation bar -->
+
+<nav class="navbar navbar-expand-sm bg-primary navbar-dark">
+<!-- LINKS -->
+    <ul class="navbar-nav">
+        <li class="nav-item">
+            <a routerLink="employees" class="nav-link" routerLinkActive="active">  Employee List</a>
+        </li>
+        <li class="nav-item">
+            <a routerLink="add" class="nav-link" routerLinkActive="active">  Add Employee </a>
+        </li>
+
+    </ul>
+    <ul class="navbar-nav">
+        <li class="nav-item">
+            <a routerLink="assets" class="nav-link" routerLinkActive="active">  Asset List</a>
+        </li>
+        <li class="nav-item">
+            <a routerLink="addasset" class="nav-link" routerLinkActive="active">  Add Asset</a>
+        </li>
+
+    </ul>
+
+</nav>
+
+<!-- usage of interpolation:{{}} see in title it gets from app.component.ts -->
+<div class="container">
+<br>
+<h2 style="text-align: center">{{title}}</h2>
+<br>
+
+<!-- like a box -->
+<div class="card">
+      <div class="card-body">
+        <router-outlet></router-outlet>
+    </div>
+</div>
+</div>
+
+
+<!-- footer section -->
+
+<footer class="footer">
+    <div class="container">
+
+        <span> All Rights Reserved 2019@Sahadan</span>
+    </div>
+</footer>
+
+
+
+
+
+
+
+
+
+
+
